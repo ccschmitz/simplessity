@@ -1,0 +1,17 @@
+.gradient(linear, @from, @to, @direction: top) {
+	background: @from;
+	background: -webkit-linear-gradient(@direction, @from, @to);
+	background: -moz-linear-gradient(@direction, @from, @to);
+	background: -ms-linear-gradient(@direction, @from, @to);
+	background: -o-linear-gradient(@direction, @from, @to);
+	background: linear-gradient(@direction, @from, @to);
+}
+
+.gradient(radial, @from, @to, @starting-point: center, @shape: ellipse cover) {
+	background: @from;
+	background: -webkit-radial-gradient(@starting-point, @shape, @from, @to);
+	background: -moz-radial-gradient(@starting-point, @shape, @from, @to);
+	background: -ms-radial-gradient(@starting-point, @shape, @from, @to);
+	background: -o-radial-gradient(@starting-point, @shape, @from, @to);
+	background: radial-gradient(@starting-point, @shape, @from, @to);
+}
